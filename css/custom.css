@@ -1,0 +1,48 @@
+/*=========== global style =========*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+/* =========== global style ========= */
+
+/* =========== topbar style ========= */
+.topbar{
+    height: 7vh;
+    margin: 0;
+    padding: 0 8%;
+    background-color: #e02453;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* responsive */
+@media (max-width: 767px) {
+    .topbar{
+        display: none !important;
+    }
+}
+/* =========== topbar style ========= */
+
+/* =========== navbar style ========= */
+.navbar{
+    height: 12vh;
+    width: 100%;
+    margin: 0;
+    padding: 0 8%;
+    background-color: #ffffff96;
+    color: #000;
+}
+.fa-magnifying-glass{
+    background-color: #e02453;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
