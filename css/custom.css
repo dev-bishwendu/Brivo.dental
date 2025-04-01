@@ -5,13 +5,16 @@
     box-sizing: border-box;
     font-family: Verdana, Tahoma, sans-serif;
 }
+.container-fluid{
+    padding: 0 8%;
+}
 /* =========== global style ========= */
 
 /* =========== topbar style ========= */
 .topbar{
     height: 7vh;
     margin: 0;
-    padding: 0 8%;
+    padding: 1px 8%;
     background-color: #e02453;
     color: #fff;
     display: flex;
@@ -28,12 +31,11 @@
 
 /* =========== navbar style ========= */
 .navbar{
-    height: 12vh;
-    width: 100%;
     margin: 0;
     padding: 0 8%;
-    background-color: #ffffff96;
     color: #000;
+    z-index: 1;
+    background-color: #ffffffb3;
 }
 .fa-magnifying-glass{
     background-color: #e02453;
@@ -46,3 +48,49 @@
     color: #fff;
     cursor: pointer;
 }
+.nav-link:hover{
+    color: #e02453 !important;
+}
+.active{
+    color: #e02453 !important;
+}
+.btn:hover{
+    background-color: #e02453 !important;
+}
+/* responsive */
+@media (max-width: 767px) {
+    .navbar form{
+        display: none !important;
+    }
+    .navbar-nav{
+        align-items: center !important;
+    }
+}
+/* =========== navbar style ========= */
+
+/* ========== banner style ========= */
+.banner{
+    position: absolute;
+    top: 7vh;
+    height: 100vh;
+    width: 100%;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+/* ========== banner style ========= */
