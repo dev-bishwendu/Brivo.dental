@@ -8,6 +8,14 @@
 .container-fluid{
     padding: 0 8%;
 }
+.mt{
+    margin-top: 100px;
+}
+@media (max-width: 767px) {
+    .mt{
+        margin-top: 20px !important;
+    }
+}
 /* =========== global style ========= */
 
 /* =========== topbar style ========= */
@@ -216,3 +224,18 @@
     }
 }
 /* ========== category style ========= */
+
+/* ========== about style ========= */
+.about-us-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.about-us-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
