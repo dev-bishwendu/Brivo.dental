@@ -9,7 +9,13 @@
     padding: 0 8%;
 }
 .mt{
-    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+@media (max-width: 767px) {
+    .mt{
+        padding-top: 40px !important;
+    }
 }
 /* =========== global style ========= */
 
@@ -186,6 +192,7 @@
 /* ========== category style ========= */
 .category{
     width: 100%;
+    height: 40vh;
     background-color: #f0f5f8;
 }
 .cards{
@@ -212,6 +219,18 @@
 }
 /* responsive */
 @media (max-width: 767px) {
+    .category{
+        height: 100% !important;
+    }
+    .category h3{
+        font-size: 25px !important;
+    }
+    .category p{
+        font-size: 12px !important;
+    }
+    .category a{
+        font-size: 12px !important;
+    }
     .cards{
         transform: translateY(0) !important;
     }
@@ -235,6 +254,9 @@
     align-items: center;
     gap: 10px;
 }
+.text-button button:hover{
+    background-color: black !important;
+}
 /* responsive */
 @media (max-width: 767px) {
     .about-us-container{
@@ -246,5 +268,95 @@
     .about-us-text p{
         font-size: 12px !important;
     }
+    .text-img{
+        flex-direction: column !important;
+    }
+    .text-button button{
+        font-size: 8px !important;
+        padding: 5px 8px !important;
+    }
+    .about-us-img img{
+        width: 100% !important;
+    }
 }
 /* ========== about style ========= */
+
+/* ========== service style ========= */
+.services{
+    width: 100%;
+    background-color: #f0f5f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.service-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.card-1::before{
+    /* using font awesome icon as background icon */
+    content: "\f0f8"; 
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 100px;
+    opacity: 0.1;
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+}
+.card-2::before{
+    content: "\f0fa"; 
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 100px;
+    opacity: 0.1;
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+}
+.card-3::before{
+    content: "\f549"; 
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 100px;
+    opacity: 0.1;
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+}
+.card-4::before{
+    content: "\f486"; 
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 100px;
+    opacity: 0.1;
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+}
+.card-5::before{
+    content: "\e05c"; 
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 100px;
+    opacity: 0.1;
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+}
+.card-6{
+    background-image: url('../asset/services\ img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+/* responsive */
+@media (max-width: 767px) {
+    .service-card{
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+}
+/* service style end */
