@@ -413,6 +413,9 @@
 .p-btn{
     transform: translateY(40px);
 }
+.p-btn:hover{
+    background-color: black !important;
+}
 /* responsive */
 @media (max-width: 767px) {
     .specialist-card{
@@ -425,3 +428,8 @@
     }
 }
 /* specialist style end */
+
+/* FAQS */
+.faqs{
+    background-color: #f0f5f8;
+}
