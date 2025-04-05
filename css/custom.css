@@ -279,6 +279,11 @@
         width: 100% !important;
     }
 }
+@media (min-width: 768px) and (max-width: 1199px) {
+    .about-us-container{
+        flex-direction: column-reverse !important;
+    }
+}
 /* ========== about style ========= */
 
 /* ========== service style ========= */
@@ -360,3 +365,63 @@
     }
 }
 /* service style end */
+
+/* specialist style */
+.specialist-card{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 30px;
+}
+.card-img{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background: url('https://via.placeholder.com/300x200');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card-name a:hover{
+    color: #e02453 !important;
+}
+/* using font awesome icon as front layer icon */
+.card-img:hover::before{
+    content: "\f0f1";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 700;
+    font-size: 50px; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(126, 206, 235, 0.5);
+    opacity: 0.7;
+    transition: all 0.3s ease-in-out;
+    color: #e02453;
+    cursor: pointer;
+}
+.fa-plus{
+    transform: translateY(50%);
+    background-color: #e02453;
+    color: #fff;
+}
+.p-btn{
+    transform: translateY(40px);
+}
+/* responsive */
+@media (max-width: 767px) {
+    .specialist-card{
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    .specialist-card{
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+/* specialist style end */
