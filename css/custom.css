@@ -428,20 +428,3 @@
     }
 }
 /* specialist style end */
-
-/* dental tourism style */
-.tourism{
-    background-color: #f0f5f8;
-    height: 80vh;
-}
-.dental-tourism{
-    background-image: url('../asset/tourism\ bg\ img.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-    height: 70vh;
-}
