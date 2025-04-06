@@ -466,7 +466,7 @@
     justify-content: space-between;
     align-items: center;
     gap: 30px;
-    margin-top: 30px;
+    margin: 30px 0;
 }
 .work-process-img{
     display: flex;
@@ -497,3 +497,15 @@
     display: flex;
     align-items: center;
 }
+/* responsive */
+@media (max-width: 767px) {
+    .testimonial-container{
+        flex-direction: column !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    .testimonial-container{
+        flex-direction: column !important;
+    }
+}
+/* testimonial style end */
