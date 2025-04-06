@@ -451,6 +451,7 @@
     border-radius: 15px;
     transition: all 0.5s ease;
 }
+/* holographic effect */
 .holographic-card::before {
     content: '';
     position: absolute;
@@ -467,12 +468,20 @@
     transform: rotate(-45deg);
     transition: all 0.5s ease;
     opacity: 0;
-}
-.holographic-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(222, 91, 99, 0.5);
-}  
+} 
 .holographic-card:hover::before {
     opacity: 1;
     transform: rotate(-45deg) translateY(100%);
 }
+/* responsive */
+@media (max-width: 767px) {
+    .work-process{
+        flex-direction: column !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    .work-process{
+        flex-direction: column !important;
+    }
+}
+/* how care works style end */
