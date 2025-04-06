@@ -428,3 +428,12 @@
     }
 }
 /* specialist style end */
+
+/* how care works style */
+.work-process{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
