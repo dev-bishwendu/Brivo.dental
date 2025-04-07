@@ -493,6 +493,16 @@
     align-items: center;
     gap: 30px;
 }
+.carousel-item{
+    background: url('../asset/caro\ bg.png'), color(#f0f5f8 red green blue);
+    padding: 72px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .testimonial-img{
     display: flex;
     align-items: center;
