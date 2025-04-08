@@ -495,11 +495,6 @@
     height: 100%;
     padding: 68px;
 }
-.swiper-button-next, .swiper-button-prev{
-    position: absolute !important;
-    right: 5px !important;
-    top: 50% !important;
-}
 /* responsive */
 @media (max-width: 767px) {
     .testimonial-container{
