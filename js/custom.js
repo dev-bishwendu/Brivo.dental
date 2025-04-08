@@ -20,6 +20,11 @@ var swiper = new Swiper(".mySwiperTwo", {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
+  navigation: {
+    nextEl: ".testimonial-button-next",
+    prevEl: ".testimonial-button-prev",
+    container: ".testimonial-button-container",
+  },
   mousewheel: true,
     keyboard: true,
     loop: true,
