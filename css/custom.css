@@ -658,6 +658,7 @@ td{
 @media (max-width: 767px) {
     .contact-form{
         flex-direction: column !important;
+        height: 100% !important;
     }
     .contact-img-text{
         transform: translateY(0) !important;
@@ -670,8 +671,8 @@ td{
         flex-direction: column !important;
     }
     .contact-img-text{
-        transform: translateY(40px) !important;
-        padding: 20px 40px !important;
+        transform: translateY(0px) !important;
+        padding: 25px 40px !important;
         margin-inline: 0 !important;
         background-color: #f0f5f8dc !important;
     }
