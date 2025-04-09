@@ -605,4 +605,43 @@
     align-items: center;
     gap: 30px;
     width: 100%;
+    background-color: #f0f5f8;
+}
+.contact-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+.contact-img{
+    background-image: url('../asset/contact\ img.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+.contact-img-text{
+    background-color: #f0f5f879;
+    padding: 40px 80px;
+    margin-inline: 2%;
+    transform: translateY(15%);
+}
+.contact-btn{
+    background-color: #e02453;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.contact-btn:hover{
+    background-color: black;
+    color: #fff;
 }
